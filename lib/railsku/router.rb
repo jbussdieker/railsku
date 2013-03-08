@@ -7,6 +7,10 @@ module Railsku
     @@backends = []
     @@running = []
 
+    def self.backends
+      @@backends
+    end
+
     def self.setup_backends(bes)
       @@backends = bes
     end

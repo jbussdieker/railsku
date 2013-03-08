@@ -8,4 +8,5 @@ Gem::Specification.new do |gem|
 
   gem.add_runtime_dependency 'rack'
   gem.add_runtime_dependency 'unicorn'
+  gem.add_runtime_dependency 'sinatra'
 end

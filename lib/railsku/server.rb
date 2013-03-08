@@ -2,6 +2,11 @@ require 'net/http'
 
 module Railsku
   class Server
+    def self.run
+      puts File.expand_path("../../..", __FILE__)
+      Kernel.exec "rackup"
+    end
+
     def self.call(env)
       request = Rack::Request.new(env)
       uri = URI(request.url)
